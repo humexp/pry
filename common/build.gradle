@@ -16,7 +16,11 @@ ext['groovy.version'] = '2.5.5'
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.5.5'
-
+    
+    compile 'org.glassfish.jersey.core:jersey-client:2.27'
+    compile 'org.glassfish.jersey.inject:jersey-hk2:2.27'
+    compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.27'
+    
     testCompile 'org.junit.jupiter:junit-jupiter-api:5.3.2'
 }
 
