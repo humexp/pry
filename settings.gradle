@@ -1,4 +1,6 @@
 rootProject.name = 'pry'
 
 include 'provider'
+include 'consumer'
+include 'common'
 

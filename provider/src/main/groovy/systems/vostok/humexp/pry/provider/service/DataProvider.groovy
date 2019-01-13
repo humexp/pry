@@ -1,11 +1,16 @@
 package systems.vostok.humexp.pry.provider.service
 
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
-import systems.vostok.humexp.pry.provider.dao.domain.SepaTransaction
+import systems.vostok.humexp.pry.common.dao.domain.Transaction
+import systems.vostok.humexp.pry.provider.component.SyncTransactionBuilder
 
 @Service
 class DataProvider {
-    List<SepaTransaction> getTransactions() {
-        [new SepaTransaction(id: UUID.randomUUID(), content: 'content')]
+    @Autowired
+    SyncTransactionBuilder syncTrnBuilder
+
+    List<Transaction> getTransactions(Integer numOfTransactions) {
+        syncTrnBuilder.buildTransactions(numOfTransactions)
     }
 }

@@ -1,11 +1,11 @@
-package systems.vostok.humexp.pry.provider.dao.domain
+package systems.vostok.humexp.pry.common.dao.domain
 
 import groovy.transform.Canonical
 import groovy.transform.CompileStatic
 
 @Canonical
 @CompileStatic
-class SepaTransaction {
+class Transaction {
     UUID id
     String content
 }
