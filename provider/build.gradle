@@ -17,6 +17,8 @@ apply plugin: 'groovy'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
+ext['groovy.version'] = '2.5.5'
+
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.5.5'
 
