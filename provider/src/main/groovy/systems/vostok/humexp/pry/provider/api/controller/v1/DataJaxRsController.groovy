@@ -1,22 +1,29 @@
 package systems.vostok.humexp.pry.provider.api.controller.v1
 
 import groovy.transform.CompileStatic
-import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import systems.vostok.humexp.pry.common.dao.domain.CommonRequest
 import systems.vostok.humexp.pry.common.dao.domain.Transaction
 import systems.vostok.humexp.pry.provider.service.DataProvider
 
+import javax.inject.Inject
+import javax.ws.rs.Consumes
+import javax.ws.rs.POST
+import javax.ws.rs.Path
+import javax.ws.rs.Produces
 
-@RestController
+import static javax.ws.rs.core.MediaType.APPLICATION_JSON
+
+@Path('api/v1/jaxrs/data/')
+@Produces(APPLICATION_JSON)
+@Consumes(APPLICATION_JSON)
 @CompileStatic
-@RequestMapping('api/v1/data')
 class DataJaxRsController {
-    @Autowired
+    @Inject
     DataProvider dataProvider
 
-    @RequestMapping('transactions/all')
-    List<Transaction> getTransactions() {
-        dataProvider.getTransactions(null)
+    @POST
+    @Path('transactions/all')
+    List<Transaction> getTransactions(CommonRequest request) {
+        dataProvider.getTransactions(request.properties.num as Integer)
     }
 }
