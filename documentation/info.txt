@@ -1,0 +1,2 @@
+Standard documentation
+https://www.iso20022.org/payments_messages.page
