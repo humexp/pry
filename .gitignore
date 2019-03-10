@@ -3,11 +3,5 @@
 
 /pry.iml
 
-/common/build/
-/common/out/
-
-/consumer/build/
-/consumer/out/
-
-/provider/build/
-/provider/out/
+*/build/
+*/out/
