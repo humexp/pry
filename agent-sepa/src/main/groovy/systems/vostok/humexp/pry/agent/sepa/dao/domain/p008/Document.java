@@ -1,6 +1,8 @@
 
 package systems.vostok.humexp.pry.agent.sepa.dao.domain.p008;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -31,7 +33,7 @@ import javax.xml.bind.annotation.XmlType;
     "fiToFICstmrCdtTrf"
 })
 public class Document {
-
+    @JsonProperty("fiToFICstmrCdtTrf")
     @XmlElement(name = "FIToFICstmrCdtTrf", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08", required = true)
     protected FIToFICustomerCreditTransferV08 fiToFICstmrCdtTrf;
 
