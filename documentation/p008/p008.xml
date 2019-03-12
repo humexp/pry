@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Document>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>${msgId}</MsgId>
+            <CreDtTm>${msgDateTime}</CreDtTm>
+            <NbOfTxs>${trnNumber}</NbOfTxs>
+            <TtlIntrBkSttlmAmt Ccy="${stlAmountTotalCur}">${stlAmountTotal}</TtlIntrBkSttlmAmt>
+            <IntrBkSttlmDt>${stlDate}</IntrBkSttlmDt>
+            <SttlmInf>
+                <SttlmMtd>${stlMethod}</SttlmMtd>
+                <ClrSys>
+                    <Prtry>${clearingSys}</Prtry>
+                </ClrSys>
+            </SttlmInf>
+            <InstgAgt>
+                <FinInstnId>
+                    <BIC>${originatingInst}</BIC>
+                </FinInstnId>
+            </InstgAgt>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <InstrId>${instructionId}</InstrId>
+                <EndToEndId>${endToEndId}</EndToEndId>
+                <TxId>${trnId}</TxId>
+            </PmtId>
+            <PmtTpInf>
+                <SvcLvl>
+                    <Cd>${schemeId}</Cd>
+                </SvcLvl>
+            </PmtTpInf>
+            <IntrBkSttlmAmt Ccy="${stlAmountCur}">${stlAmount}</IntrBkSttlmAmt>
+            <ChrgBr>${chargeBearer}</ChrgBr>
+            <Dbtr>
+                <Nm>${debtorName}</Nm>
+                <PstlAdr>
+                    <Ctry>${debtorCountry}</Ctry>
+                    <AdrLine>${debtorAddressLine1}</AdrLine>
+                    <AdrLine>${debtorAddressLine2}</AdrLine>
+                </PstlAdr>
+            </Dbtr>
+            <DbtrAcct>
+                <Id>
+                    <IBAN>${debtorAccIban}</IBAN>
+                </Id>
+            </DbtrAcct>
+            <DbtrAgt>
+                <FinInstnId>
+                    <BIC>${debtorAgtBic}</BIC>
+                </FinInstnId>
+            </DbtrAgt>
+            <CdtrAgt>
+                <FinInstnId>
+                    <BIC>${creditorAgtBic}</BIC>
+                </FinInstnId>
+            </CdtrAgt>
+            <Cdtr>
+                <Nm>${creditorName}</Nm>
+                <PstlAdr>
+                    <Ctry>${creditorCountry}</Ctry>
+                    <AdrLine>${creditorAddressLine1}</AdrLine>
+                    <AdrLine>${creditorAddressLine2}</AdrLine>
+                </PstlAdr>
+            </Cdtr>
+            <CdtrAcct>
+                <Id>
+                    <IBAN>${creditorAccIban}</IBAN>
+                </Id>
+            </CdtrAcct>
+            <RmtInf>
+                <Ustrd>${remittanceInformation}</Ustrd>
+            </RmtInf>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+</Document>
+

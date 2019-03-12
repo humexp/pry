@@ -1,0 +1,74 @@
+<Document>
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>D118111414558062</MsgId>
+            <CreDtTm>2018-11-14T10:30:39</CreDtTm>
+            <NbOfTxs>1</NbOfTxs>
+            <TtlIntrBkSttlmAmt Ccy="EUR">71.4</TtlIntrBkSttlmAmt>
+            <IntrBkSttlmDt>2018-11-14</IntrBkSttlmDt>
+            <SttlmInf>
+                <SttlmMtd>CLRG</SttlmMtd>
+                <ClrSys>
+                    <Prtry>LITAS-MIG</Prtry>
+                </ClrSys>
+            </SttlmInf>
+            <InstgAgt>
+                <FinInstnId>
+                    <BIC>CARDCY2LXXX</BIC>
+                </FinInstnId>
+            </InstgAgt>
+        </GrpHdr>
+        <CdtTrfTxInf>
+            <PmtId>
+                <InstrId>D118111414567216</InstrId>
+                <EndToEndId>NOTPROVIDED</EndToEndId>
+                <TxId>CO131120180112</TxId>
+            </PmtId>
+            <PmtTpInf>
+                <SvcLvl>
+                    <Cd>SEPA</Cd>
+                </SvcLvl>
+            </PmtTpInf>
+            <IntrBkSttlmAmt Ccy="EUR">71.40</IntrBkSttlmAmt>
+            <ChrgBr>SLEV</ChrgBr>
+            <Dbtr>
+                <Nm>GIGABOY LTD</Nm>
+                <PstlAdr>
+                    <Ctry>CY</Ctry>
+                    <AdrLine>ARCH III, 226, 3RD FLOOR,</AdrLine>
+                    <AdrLine>3030, , LIMASSOL, , USA</AdrLine>
+                </PstlAdr>
+            </Dbtr>
+            <DbtrAcct>
+                <Id>
+                    <IBAN>CY16902000010000020101000217</IBAN>
+                </Id>
+            </DbtrAcct>
+            <DbtrAgt>
+                <FinInstnId>
+                    <BIC>CARDCY2LXXX</BIC>
+                </FinInstnId>
+            </DbtrAgt>
+            <CdtrAgt>
+                <FinInstnId>
+                    <BIC>BCYPCY2NXXX</BIC>
+                </FinInstnId>
+            </CdtrAgt>
+            <Cdtr>
+                <Nm>C AND K BOOKS LTD</Nm>
+                <PstlAdr>
+                    <Ctry>CY</Ctry>
+                    <AdrLine>5A NIKOU LIMASSOL 3051 CYPRUS</AdrLine>
+                </PstlAdr>
+            </Cdtr>
+            <CdtrAcct>
+                <Id>
+                    <IBAN>CY79002001610000001100483100</IBAN>
+                </Id>
+            </CdtrAcct>
+            <RmtInf>
+                <Ustrd>INVOICE 7288</Ustrd>
+            </RmtInf>
+        </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+</Document>
