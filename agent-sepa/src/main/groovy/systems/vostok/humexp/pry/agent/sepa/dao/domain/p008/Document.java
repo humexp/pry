@@ -3,17 +3,14 @@ package systems.vostok.humexp.pry.agent.sepa.dao.domain.p008;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
  * <p>Java class for Document complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="Document">
  *   &lt;complexContent>
@@ -25,13 +22,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Document", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08", propOrder = {
-    "fiToFICstmrCdtTrf"
-})
+@XmlRootElement(name = "Document")
+@XmlAccessorType(XmlAccessType.NONE)
 public class Document {
     @JsonProperty("fiToFICstmrCdtTrf")
     @XmlElement(name = "FIToFICstmrCdtTrf", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08", required = true)
@@ -39,11 +32,9 @@ public class Document {
 
     /**
      * Gets the value of the fiToFICstmrCdtTrf property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link FIToFICustomerCreditTransferV08 }
-     *     
+     *
+     * @return possible object is
+     * {@link FIToFICustomerCreditTransferV08 }
      */
     public FIToFICustomerCreditTransferV08 getFIToFICstmrCdtTrf() {
         return fiToFICstmrCdtTrf;
@@ -51,14 +42,11 @@ public class Document {
 
     /**
      * Sets the value of the fiToFICstmrCdtTrf property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link FIToFICustomerCreditTransferV08 }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link FIToFICustomerCreditTransferV08 }
      */
     public void setFIToFICstmrCdtTrf(FIToFICustomerCreditTransferV08 value) {
         this.fiToFICstmrCdtTrf = value;
     }
-
 }
