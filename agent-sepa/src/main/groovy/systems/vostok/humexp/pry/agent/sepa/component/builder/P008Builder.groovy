@@ -17,7 +17,6 @@ class P008Builder {
     @PostConstruct
     void init() {
         objectMapper = new ObjectMapper()
-
     }
 
     String build(String properties) {
@@ -25,18 +24,11 @@ class P008Builder {
 
         JAXBContext jaxbContext = JAXBContext.newInstance(Document.class)
         Marshaller jaxbMarshaller = jaxbContext.createMarshaller()
-        jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+        jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true)
 
-        StringWriter sw = new StringWriter();
+        StringWriter sw = new StringWriter()
 
-
-        jaxbMarshaller.marshal(document, sw);
-        String xmlString = sw.toString();
-
-        xmlString
-
-        document
-
-        ''
+        jaxbMarshaller.marshal(document, sw)
+        sw.toString()
     }
 }

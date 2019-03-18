@@ -1,0 +1,53 @@
+{
+  "fiToFICstmrCdtTrf": {
+    "grpHdr": {
+      "msgId": "D118111414558062",
+      "creDtTm": "2018-11-14T10:30:39",
+      "nbOfTxs": "1",
+      "sttlmInf": {
+        "sttlmMtd": "CLRG"
+      }
+    },
+    "cdtTrfTxInf": [
+      {
+        "pmtId": {
+          "endToEndId": "NOTPROVIDED"
+        },
+        "intrBkSttlmAmt": {
+          "value": 71.40,
+          "ccy": "EUR"
+        },
+        "chrgBr": "SLEV",
+        "dbtr": {
+          "nm": "GIGABOY LTD",
+          "pstlAdr": {
+            "ctry": "CY",
+            "adrLine": [
+              "ARCH III, 226, 3RD FLOOR,",
+              "3030, , LIMASSOL, , USA"
+            ]
+          }
+        },
+        "dbtrAgt": {
+          "finInstnId": {
+            "bicfi": "CARDCY2LXXX"
+          }
+        },
+        "cdtrAgt": {
+          "finInstnId": {
+            "bicfi": "BCYPCY2NXXX"
+          }
+        },
+        "cdtr": {
+          "nm": "C AND K BOOKS LTD",
+          "pstlAdr": {
+            "ctry": "CY",
+            "adrLine": [
+              "5A NIKOU LIMASSOL 3051 CYPRUS"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
