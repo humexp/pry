@@ -1,4 +1,4 @@
-package systems.vostok.humexp.pry.web.configuration;
+package systems.vostok.humexp.pry.web.configuration.client;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
