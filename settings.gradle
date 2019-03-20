@@ -5,4 +5,5 @@ include 'web'
 include 'common'
 include 'agent-sepa'
 include 'server-config'
+include 'server-discovery'
 
