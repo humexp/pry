@@ -23,6 +23,7 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-webflux'
 
     compile "org.springframework.cloud:spring-cloud-starter-config:${springCloudVersion}"
+    compile "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:${springCloudVersion}"
     
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokProcessorVersion}"
