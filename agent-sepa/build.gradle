@@ -22,5 +22,8 @@ dependencies {
 
     compile 'org.springframework.boot:spring-boot-starter-webflux'
 
+    compile "org.springframework.cloud:spring-cloud-starter-config:${springCloudVersion}"
+    compile "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:${springCloudVersion}"
+
     testCompile "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
 }
