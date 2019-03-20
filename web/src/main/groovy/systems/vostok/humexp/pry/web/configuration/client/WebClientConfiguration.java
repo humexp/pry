@@ -11,7 +11,7 @@ public class WebClientConfiguration {
     @Autowired
     WebClientProperties properties;
 
-    @Bean
+    /*@Bean
     @LoadBalanced
     public WebClient.Builder webClientBuilder() {
         return WebClient.builder();
@@ -20,5 +20,11 @@ public class WebClientConfiguration {
     @Bean
     public WebClient webClientSepa(@LoadBalanced WebClient.Builder webClientBuilder) {
         return webClientBuilder.baseUrl(properties.getSepa().getHost()).build();
+    }*/
+
+    @Bean
+    @LoadBalanced
+    public WebClient.Builder loadBalancedWebClientBuilder() {
+        return WebClient.builder();
     }
 }

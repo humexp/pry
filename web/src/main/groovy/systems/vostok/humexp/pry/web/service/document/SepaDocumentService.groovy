@@ -10,15 +10,24 @@ import reactor.core.publisher.Mono
 @Service
 @Slf4j
 class SepaDocumentService {
-    @Autowired
-    WebClient webClientSepa
+    /*@Autowired
+    WebClient webClientSepa*/
 
-    Mono<String> createSepa(@RequestBody Mono<String> request) {
+    @Autowired
+    private WebClient.Builder webClientBuilder
+
+    Mono<String> createSepa(Mono<String> request) {
         log.info('WEB: act')
-        webClientSepa.post()
-                .uri('api/v2/document/build')
+        webClientBuilder.build().post()
+                .uri("http://agent-sepa/api/v2/document/build")
                 .body(request, String.class)
                 .retrieve()
                 .bodyToMono(String.class)
+
+        /*webClientSepa.post()
+                .uri('api/v2/document/build')
+                .body(request, String.class)
+                .retrieve()
+                .bodyToMono(String.class)*/
     }
 }
