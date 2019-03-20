@@ -31,7 +31,7 @@ class UniversalClientService {
 
     @PostConstruct
     void init() {
-        100.times { int schedulerId ->
+        5.times { int schedulerId ->
             scheduler.schedule({ executeSendSingleSepaRequest(schedulerId) }, new CronTrigger(crone))
         }
     }
